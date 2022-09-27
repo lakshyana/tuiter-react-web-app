@@ -263,14 +263,11 @@
       <h2>File upload</h2>
       <input type="file"/>
 
+
+      <h2>Radio buttons</h2>
       <input type="radio"
              name="NAME1"
              value="OPTION1"/>
-      <input type="radio" checked
-             name="NAME1"
-             value="OPTION2"/>
-
-      <h2>Radio buttons</h2>
 
       <label>Favorite movie genre:</label><br/>
 
@@ -288,20 +285,8 @@
       <label for="radio-fantasy">Fantasy</label>
 
 
-      <input type="checkbox"
-             name="NAME2"
-             checked
-             value="OPTION1"/>
-      <input type="checkbox"
-             name="NAME2"
-             value="OPTION2"/>
-      <input type="checkbox"
-             checked
-             name="NAME2"
-             value="OPTION3"/>
+
       <!--	use the input tag's checkbox type to declare a checkbox give the checkbox a value	-->
-
-
       <h2>Checkboxes</h2>
       <label>Favorite movie genre:</label>
       <br/>
@@ -318,6 +303,7 @@
              name="check-genre" id="chkbox-fantasy"/>
       <label for="chkbox-fantasy">Fantasy</label>
 
+      <br/>
       <a href="aa.com">
           American Airlines</a>
       <!--	Use the href attribute to refer to the location of the website or other page in the same website. Click on the body text to navigate -->
@@ -328,12 +314,89 @@
       <a href="https://www.lipsum.com">click here</a>
       to get dummy text<br/>
 
-      Checkout my <a href="~public/index.html">other page</a>
-
-
-
+      Checkout my <a href="~/public/index.html">other page</a>
 
   </form>
+
+  <h2>Embedding other websites</h2>
+  <iframe width="600"
+          height="400"
+          src="https://en.wikipedia.org/wiki/SpaceX">
+  </iframe>
+
+  <h2>Embedding YouTube</h2>
+  <iframe width="560"
+          height="315"
+          src="https://www.youtube.com/embed/7CZTLogln34"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+
+  <h2>Embedding Google slides</h2>
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+          frameborder="0"
+          width="680"
+          height="418"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true">
+  </iframe>
+
+  <h2>Scalable vector graphics</h2>
+  <svg width="300"
+       height="100">
+      <rect  width="300"
+             height="100"          style="fill:rgb(0,0,255);
+stroke:rgb(0,0,0);
+stroke-width:10;
+" />
+      <circle cx="50" cy="50"
+              r="40"
+              stroke="green"
+              stroke-width="4"
+              fill="yellow" />
+  </svg>
+
+  <!--	svg declares a rectangular area where we can draw	width and height attributes configure the size of the area. rect tag declares a rectangular area to draw a rectangle. width and height attributes declare size of rectangle. style attribute declares border and fill colors and border width
+  circle tag declares a rectangular area to draw a circle. cx and cy attributes declares the center position. r attribute declares the radius of the circle. stroke declares the color to draw with. stroke-width declares the size of the border. fill declares color to fill the circle -->
+
+  <h2>Drawing rectangles</h2>
+
+  <svg width="300" height="100">
+      <rect width="300" height="100"
+            style="fill:rgb(0,0,255); stroke-width:10;
+   stroke:rgb(0,0,0)" />
+  </svg>
+
+  <h2>Drawing circles</h2>
+
+  <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40"
+              stroke="green" stroke-width="4" fill="yellow" />
+  </svg>
+
+  <h2>Drawing polygons</h2>
+
+  <svg width="300" height="200">
+      <polygon points="100,10 40,198 190,78 10,78 160,198"
+               style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+  </svg>
+
+  <h2>Anchors</h2>
+  <a name="table-of-content"></a>
+  <a href="#section-a">Go to section A</a>
+  <a href="#section-b">Go to section B</a>
+
+  <a name="section-a"></a>
+  <h1>Section A</h1></a>
+  <a href="#table-of-content">Up</a>
+
+  <a name="section-b"></a>
+  <h1>Section B</h1></a>
+  <a href="#table-of-content">Up</a>
+
 
 
 </body>
