@@ -362,7 +362,7 @@ p#id-selector-2 {
 }
 
 
-/*Flex */
+/*Flex container default: Aligned left*/
 .flex-container {
     border-width: 5px;
     border-color: black;
@@ -386,13 +386,14 @@ p#id-selector-2 {
 }
 
 
-/*Flex container*/
+/*Aligning flex horizontally*/
 .flex-container {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
 }
+
 
 
 /*Justify content center*/
@@ -422,6 +423,7 @@ p#id-selector-2 {
     justify-content: space-around;
 }
 
+
 /*justify space between*/
 .flex-container {
     border-width: 5px;
@@ -447,24 +449,88 @@ p#id-selector-2 {
     border-color: black;
     border-style: solid;
     display: flex;
-    /*justify-content: space-evenly;*/
-    /*align-items: center;*/
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
 /*flex horizontally and vertically*/
-.flex-container {
+.flex-container-even {
     border-width: 5px;
     border-color: black;
     border-style: solid;
     display: flex;
+    /*height: 100vh; !* new *!*/
     /*justify-content: space-evenly;*/
-    /*align-items: center;*/
+    align-items: stretch;
 }
-
-.flex-container > .flex-box {
+.flex-container-even > .flex-box {
     flex-basis: 100%;
 }
+
+
+
+/*Media Queries*/
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+
+/*Media queries third rule*/
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+    .media-query {
+        background-color: red;
+        color: white;
+    }
+}
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: blue;
+        color: white;
+    }
+    .media-query {
+        background-color: yellow;
+        color: black;
+    }
+}
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
+
+
+
 
 
 
