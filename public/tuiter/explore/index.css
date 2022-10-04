@@ -137,6 +137,16 @@ html {
     border-color: rgb(47, 51, 54);
 }
 
+
+/*post  border*/
+.wd-post-border {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
 /*.wd-fill-grey {*/
 /*    background-color:  rgb(47, 51, 54);*/
 /*}*/
