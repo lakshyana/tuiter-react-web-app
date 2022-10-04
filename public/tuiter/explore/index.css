@@ -1,0 +1,176 @@
+
+
+/*Main components*/
+
+/*wireframe*/
+.wd-content {
+    max-width: 570px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*html content margin and background*/
+html {
+    background-color: black;
+    margin-left: 16px;
+}
+
+/*top section*/
+.wd-top-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*search bar */
+.wd-search-bar {
+    background-color: #202327;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-radius: 100px;
+    align-items: center;
+    padding: 8px;
+    margin: 12px 12px 12px 12px;
+/*    Margin: top right bottom left*/
+}
+
+/*search*/
+.wd-search-input {
+    color: white;
+    background-color: #202327;
+    margin-left: 12px;
+    border: none;
+    width: 100%;
+}
+
+/*Menu bar*/
+.wd-menu-bar {
+    display: flex;
+    font-weight: bolder;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/*Menu items*/
+.wd-menu-item{
+    padding: 16px 16px 16px 16px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/*Posts*/
+.wd-posts {
+    padding: 12px;
+}
+
+/*Posts Metadata*/
+.wd-posts-metadata{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*Posts author*/
+.wd-posts-author {
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Posts author icon*/
+.wd-posts-icon {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+/*Posts time*/
+.wd-posts-author-time {
+    margin-left: 2px;
+}
+
+/*Posts title*/
+.wd-posts-headline {
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin: 4px 36px 4px 0px;
+}
+
+/*Posts thumbnail*/
+.wd-posts-thumbnail {
+    margin-right: 16px;
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+
+/*Generic content settings*/
+
+/*Add right margin*/
+.wd-margin-right {
+    margin-right: 12px;
+}
+
+/*Main content border*/
+.wd-content-border {
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+/*.wd-fill-grey {*/
+/*    background-color:  rgb(47, 51, 54);*/
+/*}*/
+
+/*define grey color setting*/
+.wd-grey {
+    color: darkgray;
+}
+
+/*define regular item color*/
+.wd-regular {
+    color: rgb(110, 118, 125);
+}
+
+/*define selected item color*/
+.wd-selected {
+    color: rgb(29,161,242);
+}
+
+/*define selected item border*/
+.wd-selected-border {
+    background-color: rgb(29,161,242);
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    margin-top: 16px;
+}
+
+/*define flex settings */
+.wd-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
