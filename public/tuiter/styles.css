@@ -48,38 +48,9 @@ html {
     border-color: rgb(47, 51, 54);
 }
 
-
-/*Main content border*/
-.wd-content-border {
-    border-top-width: 1px;
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-top-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-color: rgb(47, 51, 54);
-}
-
 /*.wd-fill-grey {*/
 /*    background-color:  rgb(47, 51, 54);*/
 /*}*/
-
-/*define grey color setting*/
-.wd-grey {
-    color: darkgray;
-}
-
-/*define regular item color*/
-.wd-regular {
-    color: rgb(110, 118, 125);
-}
-
-/*define selected item color*/
-.wd-selected {
-    color: rgb(29,161,242);
-}
 
 /*define selected item border*/
 .wd-selected-border {
@@ -97,10 +68,72 @@ html {
     justify-content: space-between;
 }
 
+
+/*Common content settings*/
+
+/*Main content border*/
+.wd-content-border {
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+
 /*Circular thumbnail image*/
 .wd-thumbnail-circular{
     width:48px;
     height: 48px;
     border-radius: 50%;
+}
+
+/*Content stats section*/
+.wd-stats-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+
+/*Content stats anchor arrangement*/
+.wd-stats-anchor {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+}
+
+
+/*Content body color settings */
+
+/*Content stats color*/
+.wd-stats-regular {
+    color: grey;
+}
+
+/*Content stats selected color*/
+.wd-stats-selected {
+    color: red;
+}
+
+/*define grey color setting*/
+.wd-grey {
+    color: darkgray;
+}
+
+/*define regular item color*/
+.wd-regular {
+    color: rgb(110, 118, 125);
+}
+
+/*define selected item color*/
+.wd-selected {
+    color: rgb(29,161,242);
 }
 
