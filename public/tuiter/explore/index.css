@@ -5,7 +5,7 @@
 /*wireframe*/
 .wd-content {
     max-width: 570px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial Rounded MT Bold';
 }
 
 
@@ -47,7 +47,7 @@ html {
 /*Menu bar*/
 .wd-menu-bar {
     display: flex;
-    font-weight: bolder;
+    font-weight: bold;
     justify-content: space-between;
     flex-direction: row;
 }
@@ -77,8 +77,8 @@ html {
 /*Posts author*/
 .wd-posts-author {
     color: white;
-    font-size: 13px;
-    font-weight: bolder;
+    font-size: 14px;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     align-items: center;

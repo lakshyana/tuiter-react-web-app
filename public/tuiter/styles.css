@@ -1,21 +1,53 @@
 /*Generic content settings*/
 
-/*wireframe*/
-.wd-content {
-    max-width: 570px;
-    font-family: 'Roboto', sans-serif;
-}
-
 /*html content margin and background*/
 html {
     background-color: black;
     margin-left: 16px;
 }
 
+/*wireframe*/
+.wd-content {
+    max-width: 600px;
+    font-family: 'Arial Rounded MT', sans-serif;
+    margin: auto;
+}
+
 /*Add right margin*/
 .wd-margin-right {
     margin-right: 12px;
 }
+
+
+/*Add left margin*/
+.wd-margin-left {
+    margin-left: 16px;
+}
+
+/*Add top margin*/
+.wd-margin-top {
+    margin-top: 12px;
+}
+
+/*Add bottom margin*/
+.wd-margin-bottom {
+    margin-bottom: 12px;
+}
+
+/*Add bottom border*/
+.wd-border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+/*Add top border*/
+.wd-border-top {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
 
 /*Main content border*/
 .wd-content-border {
@@ -26,16 +58,6 @@ html {
     border-top-style: solid;
     border-left-style: solid;
     border-right-style: solid;
-    border-bottom-style: solid;
-    border-color: rgb(47, 51, 54);
-}
-
-
-/*post  border*/
-.wd-post-border {
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-top-style: solid;
     border-bottom-style: solid;
     border-color: rgb(47, 51, 54);
 }
@@ -75,4 +97,10 @@ html {
     justify-content: space-between;
 }
 
+/*Circular thumbnail image*/
+.wd-thumbnail-circular{
+    width:48px;
+    height: 48px;
+    border-radius: 50%;
+}
 
