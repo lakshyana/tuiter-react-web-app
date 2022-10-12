@@ -2,46 +2,31 @@
 
 /*Main components*/
 
-/*wireframe*/
-.wd-content {
-    max-width: 570px;
-    font-family: 'Arial Rounded MT Bold';
-}
-
-
 /*html content margin and background*/
 html {
-    background-color: black;
-    margin-left: 16px;
+    font-size: x-small;
+    /*font-family: 'Arial Rounded MT';*/
 }
 
-/*top section*/
-.wd-top-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+/*Overrider btn primary*/
+.btn-primary {
+    background-color: rgb(29,161,242);
+    font-weight: bold;
 }
 
-/*search bar */
-.wd-search-bar {
-    background-color: #202327;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    border-radius: 100px;
-    align-items: center;
-    padding: 8px;
-    margin: 12px 12px 12px 12px;
-/*    Margin: top right bottom left*/
-}
-
-/*search*/
-.wd-search-input {
-    color: white;
-    background-color: #202327;
-    margin-left: 12px;
+.nav-tabs{
+    padding-top: 2px;
     border: none;
-    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: black;
+    border: none;
+    border-bottom: 3px solid rgb(29,161,242);
+    color: white;
+    font-weight: bold;
 }
 
 /*Menu bar*/
@@ -67,8 +52,10 @@ html {
 /*Posts Metadata*/
 .wd-posts-metadata{
     color: rgb(110, 118, 125);
-    font-size: 13px;
+    font-size: xx-small;
+    width: 100%;
     display: flex;
+    font-weight: normal;
     align-items: center;
     justify-content: space-between;
 }
@@ -99,24 +86,43 @@ html {
     margin-left: 2px;
 }
 
-/*Posts title*/
-.wd-posts-headline {
+/*Posts source*/
+.wd-posts-author {
+    font-weight: bold;
+    color: white;
+    font-size: xx-small;
+}
+
+/*Posts */
+.wd-posts-title {
     font-weight: bold;
     color: white;
     font-size: 15px;
-    margin: 4px 36px 4px 0px;
 }
 
 /*Posts thumbnail*/
 .wd-posts-thumbnail {
-    margin-right: 16px;
-    border-radius: 16px;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
+    border-radius: 10px;
+    /*object-fit: cover;*/
+    width: 90%;
+    height: 90%;
 }
 
+/*List group*/
+.list-group {
+    border-radius: 14px;
+}
 
+.list-group .list-group-item {
+    background-color: #1e1f21;
+    color: white;
+}
+
+.wd-image-circular {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 
 /*Generic content settings*/
 
@@ -139,13 +145,17 @@ html {
 }
 
 
-/*post  border*/
-.wd-post-border {
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
+.wd-border-gray {
     border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1pt;
+    overflow: auto;
+}
+
+/*border top bottom*/
+.wd-border-y {
+    border-top: 1pt solid rgb(47, 51, 54);
+    border-bottom: 1pt solid rgb(47, 51, 54);
 }
 
 /*.wd-fill-grey {*/
@@ -153,8 +163,13 @@ html {
 /*}*/
 
 /*define grey color setting*/
-.wd-grey {
+.wd-darkgrey {
     color: darkgray;
+}
+
+/*define grey color setting*/
+.wd-lightgrey {
+    color: lightgray;
 }
 
 /*define regular item color*/
@@ -162,26 +177,47 @@ html {
     color: rgb(110, 118, 125);
 }
 
-/*define selected item color*/
-.wd-selected {
-    color: rgb(29,161,242);
-}
-
-/*define selected item border*/
-.wd-selected-border {
-    background-color: rgb(29,161,242);
-    width: 100%;
-    height: 4px;
-    border-radius: 3px;
-    margin-top: 16px;
-}
-
-/*define flex settings */
-.wd-flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 
 
+/*!*wireframe*!*/
+/*.wd-content {*/
+/*    max-width: 570px;*/
+/*    font-family: 'Arial Rounded MT Bold';*/
+/*}*/
+
+/*!*html content margin and background*!*/
+/*html {*/
+/*    background-color: black;*/
+/*    margin-left: 16px;*/
+/*}*/
+
+
+/*!*top section*!*/
+/*.wd-top-section {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*}*/
+
+/*!*search bar *!*/
+/*.wd-search-bar {*/
+/*    background-color: #202327;*/
+/*    display: flex;*/
+/*    flex: 1;*/
+/*    flex-direction: row;*/
+/*    border-radius: 100px;*/
+/*    align-items: center;*/
+/*    padding: 8px;*/
+/*    margin: 12px 12px 12px 12px;*/
+/*!*    Margin: top right bottom left*!*/
+/*}*/
+
+/*!*search*!*/
+/*.wd-search-input {*/
+/*    color: white;*/
+/*    background-color: #202327;*/
+/*    margin-left: 12px;*/
+/*    border: none;*/
+/*    width: 100%;*/
+/*}*/

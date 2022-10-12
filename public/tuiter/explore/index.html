@@ -1,196 +1,382 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Explore</title>
-    <link href="index.css" rel="stylesheet" />
-    <link href="../styles.css" rel="stylesheet" />
-    <!--   Using fontawesome-->
+    <title>Title</title>
+
+    <!--  Bootstrap library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+
+    <!--  Font awesome-->
     <script src="https://kit.fontawesome.com/cc0f635f1e.js" crossorigin="anonymous"></script>
-    <!--    Using google font-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">-->
+
+    <!--  Style sheet link shared-->
+    <link href="../shared.css" rel="stylesheet" />
+
+    <!--  Style sheet link-->
+    <link href="../explore/index.css" rel="stylesheet" />
+
 </head>
 
 
-<body>
+<!--Background set in body with text color-->
+<body class="bg-black text-white">
 
-<!--division for all body content-->
-<div class="wd-content wd-content-border">
+<!--Main container with margin on top and bottom-->
+<div class="container">
+    <!--  Row of three sections-->
+    <div class="row flex-nowrap">
 
-<!--    top section-->
-    <div class="wd-top-section">
-<!--        top section: search bar component-->
-        <div class="wd-search-bar">
-<!--            icon-->
-            <i class="fa-solid fa-magnifying-glass wd-grey"></i>
-<!--            input field-->
-            <input class="wd-search-input" placeholder="Search Twitter" />
-        </div>
-<!--        settings icon-->
-        <a href="explore_settings.html" class="wd-margin-right">
-            <i class="fa-solid fa-gear wd-selected"></i>
-        </a>
-    </div>
+        <!--   First section start  -->
+        <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-2 my-2">
+            <!--    A vertical group of list items  -->
+            <div class="list-group">
+                <!--        Twitter symbol-->
+                <li
+                        class="list-group-item bg-black text-white mx-2 pb-4"><i
+                        class="fa-brands fa-twitter"></i></li>
+                <!--        Home symbol-->
+                <a class="list-group-item list-group-item-action bg-black text-white pb-4"
+                   href="home.html">
+                    <i class="fa-solid fa-house mx-2"></i>
+                    <!--        Hide text in size less than xl-->
+                    <span class="d-none d-xl-inline">Home</span></a>
+                <!--        Explore-->
+                <a class="list-group-item list-group-item-action bg-black text-white pb-4"
+                   href="explore.html">
+                    <!--          Hashtag symbol-->
+                    <i class="fa-solid fa-hashtag mx-2"></i>
+                    <!--            Explore Text-->
+                    <div class="d-none d-xl-inline fw-bold">Explore</div></a>
+                <!--          Notifications-->
+                <a class="list-group-item list-group-item-action bg-black text-white pb-4"
+                   href="notifications.html">
+                    <!--          Bell icon-->
+                    <i class="fa-solid fa-bell mx-2"></i>
+                    <div class="d-none d-xl-inline">Notifications</div></a>
+                <!--          Messages-->
+                <a class="list-group-item list-group-item-action bg-black text-white pb-4"
+                   href="messages.html">
+                    <!--          Envelope Symbol-->
+                    <i class="fa-solid fa-envelope mx-2"></i>
+                    <div class="d-none d-xl-inline">Messages</div></a>
+                <!--          Bookmarks-->
+                <a class="list-group-item list-group-item-action bg-black text-white pb-4"
+                   href="bookmarks.html">
+                    <!--          Bookmark Symbol-->
+                    <i class="fa-solid fa-bookmark mx-2"></i>
+                    <div class="d-none d-xl-inline">Bookmarks</div></a>
+                <!--          Lists-->
+                <a href="lists.html"
+                   class="list-group-item list-group-item-action bg-black text-white pb-4">
+                    <!--          List icon-->
+                    <i class="fa-solid fa-list mx-2"></i>
+                    <div class="d-none d-xl-inline">Lists</div></a>
+                <a class="list-group-item list-group-item-action bg-black text-white pb-4"
+                   href="profile.html">
+                    <i class="fa-solid fa-user mx-2"></i>
+                    <div class="d-none d-xl-inline">Profile</div> </a>
+                <a class="list-group-item list-group-item-action bg-black text-white pb-4"
+                   href="more.html" >
+                    <i class="fa-solid fa-ellipsis mx-2"></i>
+                    <div class="d-none d-xl-inline">More</div> </a>
 
-<!--    Menu bar-->
-    <div class="wd-menu-bar">
-<!--        item For you-->
-        <a class="wd-menu-item wd-selected" href="explore.html">For you
-<!--            horizontal division to draw blue line-->
-            <div class="wd-selected-border"></div>
-        </a>
-<!--        Item trending-->
-        <a class="wd-menu-item wd-regular" href="explore.html">Trending
-        </a>
-<!--        Item covid-19-->
-        <a class="wd-menu-item wd-regular" href="explore.html">COVID-19
-        </a>
-<!--        Item News-->
-        <a class="wd-menu-item wd-regular" href="explore.html">News
-        </a>
-<!--        Item Sports-->
-        <a class="wd-menu-item wd-regular" href="explore.html">Sports
-        </a>
-<!--        Item Entertainment-->
-        <a class="wd-menu-item wd-regular" href="explore.html">Entertainment
-        </a>
-    </div>
-
-<!--    Content Body-->
-    <div class="wd-posts wd-post-border">
-<!--        empty box-->
-    </div>
-
-<!--posts content border-->
-    <div class="wd-posts wd-post-border">
-<!--        post metadata-->
-        <div class="wd-posts-metadata">
-            Trending in Science
-            <i class="fa-solid fa-ellipsis"></i>
-        </div>
-<!--        posts headline-->
-        <div class="wd-posts-headline">Starship</div>
-<!--        posts metadata-->
-        <div class="wd-posts-metadata">55.5K Tweets</div>
-    </div>
-
-<!--    post border-->
-    <div class="wd-posts wd-post-border">
-<!--        post metadata-->
-        <div class="wd-posts-metadata">
-            Sports - Trending
-            <i class="fa-solid fa-ellipsis"></i>
-        </div>
-<!--        post headline-->
-        <div class="wd-posts-headline">Joe Rogan</div>
-<!--        post metadata-->
-        <div class="wd-posts-metadata">5,218 Tweets</div>
-    </div>
-
-<!--    post border-->
-    <div class="wd-posts wd-post-border wd-flex-row">
-        <div>
-<!--            post author-->
-            <span class="wd-posts-author">
-<!--               author icon -->
-                <img src="https://assets.ifttt.com/images/channels/89/icons/large.png"
-                         width = 16 px height= 16 px class="wd-posts-icon">
-<!--                author name-->
-                     The New York Times
-<!--                verified icon-->
-                <img src="https://ak.picdn.net/shutterstock/videos/1082667277/thumb/8.jpg?ip=x480"
-                          width = 30 px height= 16 px class="wd-posts-icon">
-<!--                post metadata-->
-                <span class="wd-posts-author-time wd-regular">&#183; Yesterday</span>
-            </span>
-<!--            post headline-->
-            <div class="wd-posts-headline">CNN's Cuomo conundrum: A star anchor with a brother
-                in trouble</div>
-        </div>
-<!--        post thumbnail-->
-        <img src="https://static01.nyt.com/images/2020/04/06/business/04chris-cuomo/0405JPBENSMITH-print-superJumbo-v2.jpg"
-             width="100" height="100" class="wd-posts-thumbnail" />
-    </div>
-
-<!--    post border-->
-    <div class="wd-post-border wd-posts wd-flex-row">
-        <div>
-<!--            post metadata-->
-            <span class="wd-posts-metadata">COVID-19 &#183; LIVE</span>
-<!--            post headline-->
-            <div class="wd-posts-headline">COVID-19: News and updates for Massachusetts</div>
-        </div>
-<!--        post thumbnail-->
-        <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOCZ3sMK4s2NdlFWxD5ZzUrue7FzyBURZZuA&usqp=CAU" width="100" height="100" class="wd-posts-thumbnail" />
-    </div>
+                <div class="d-grid d-block">
+                    <button type="button"
+                            class="btn btn-primary  bg-light-blue btn-sm rounded-pill d-block mt-2">
+                        Tweet</button>
+                </div>
+            </div>
 
 
-<!--    post border-->
-    <div class="wd-post-border wd-posts wd-flex-row">
+        </div><!--End of first section -->
 
-        <div>
-<!--            post author-->
-            <span class="wd-posts-author">
-<!--                post author icon-->
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAtFBMVEUAct////8AcN8Abt4Aa94AZt3o7vsAat4AZ93C1PQAY9wzi+W0yvJLi+Th7vtNluf09/0AduClwe8HfuJ0ouiXwfBglubW5vkthuPs8/x2rOwxf+H2+/6z0fSAs+0AYNyoyfJwpuqHresAeuGAsOzH3vcAWtvA2vbY6vqOu+9loemlyfLP4fi21PXb5fh1ouhRmeg5guI9kOZdlObO3PaQtu1nquyJuu+gxfGevO6Msex5qOoQ+gB1AAALiklEQVR4nO2bbX+iOhOHIQkN1Val1iKKVouuirpH3fWuu/3+3+tOSCYE1KrdtXvO/uZ6UwmQ5J+HmWRCHQdBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBfglSKeJ5nOpbXKdcoVRdGD395C9Dqm6ReLrsOEze4t9VStT8/cXqwkafIHFPYaZpKEvmt+qqlvz+YnVBnT+l0HVn7G9X6Nbp365w6v3tCt2E/G0Ko05fMKuBwhU9pJAQcjCXw8nlO/lvW+Ghl49n6JADv97DKLx5ZhIn1NcjtqeQ0aDb7SYOK2RNmZOI1ICa/uAZ0uMwR7wQMPUcCeTLtKiQMJmnU+hLWi4nz5CKsvRD4leWG1N3z1CoHDt7M4WXFHJnNJY9HC0Ga89oJJX6XRjJiTsZciWF32U8NCmdLeSdmaxqJR2Lx+JFxyeWQq95NxV/wx+5RsaGE1XOtumXMmSjRcN9ZbIR+ovYjcIOD35kN2/PVkgf9XW1OA8JfbUm6TLRFWLVaZ4adbIaVdRV3A4iuJHQYAJPTeXo0r+HKaTGddU8jj+M8xx32Ug0GSZZYTvm0CrMpkVT/zpDYYUKiNfT16xgS0kydm0a1Uwi68SF5B7PK9RomzntLhzr9WWucJKnSv8kGRQynAbEylDNoB0j7bzY8dkKo/W9ZK4vZ0WFwcIt0miLotmwlOruaF4hu/qF9hFayu9JMXKosFYpdZw3WbTTZXBars1ZCossaWFNw8sFZ0WTZmMveUWhQse55YcUun0x+tK91BkvZ7jzhgfevkxhI604tkKS6BtRPdlAdwwZhw4fNJO+HjdhcFqhyND87g23MJhvAkL171o9aevMG2tSVsjA3k8fBma4XtiH0bCwLuV6fMRVRmii7UdIKdTSI4SDIUqpqVCt3h6ZGoSb6kz/jO+Nwr5HWQASn5juwrjJRI56Rs6YpbB2O9u9tfXFknK+Bmt26SgVg91SSLXBHEtDwnRFG20YUk+ZjdBaBtxUqM2Iv4M2E/6QgxX7Bm0TZj4O8plVljoP0WSE6prdWApbCWfM7+h26ApTwLcfVSj6IlcY6LS+rBDZwBMDuC8zonr03hiFY896uMUtKU+gMMvQ8fXV8ovukJFYQoiVgrpotI3CHpfOA0bURDYsBbN6WmG0SiUj8G9R4BuF8ExaWJC8amP5VTkOrTdKoEJiGAhjpC/kjtOUZRR+y1YOvp5X4Rf3EOkz/ArU43pnfpetY5IL/SFlDCzxygOFQXE4goK57rWvmZ9nD+oqb/IWsxT+c0hh5nJElXVTNQ6aWPcFFE7UosT/aisMpmcr1OEYpke5u3s2ffgbFD5+XGELFM7VssfXfdDL5swFaxqt0EyW77nCuk5So5TpqxmMUmYrjJrnK4RRqqtcAykNm3j2bGUoACMbZvWHiX6+Qh+cu6UQqjnKWg2M9Zs2jbUgaxltByN6gcIsQzMoJl+01eh32xaFJpNt2dfXcinrg08+Q+EXX1JJwYO1Krm30Dau51vDOL43P2RPMP3MxL9A4UJmSFfwwrMe93PpLQjVIUdSUmi6LdpUKiP3bIVxmAEOVAzJXCHTvdVoUrHY11O75oAT2Ynu50N9MbykD91RheZb0qGv6xsLT0qYHiuNdUmhY15wa3l1TyssEye5twDn646bTgKj+JWBhYiHjlOH9VaTXKLQ3T2lYLyjNUn0Qles2pKNbskFLys8sHr9iMKd5fEJaBF7TlhiiVQzXNwwhLEtfPhFCi3E1gvWSyL7GuSY0r0+ZJP9ty9WGBF7b3FgF5EyyyoZwnz3dKnCuCqm8/6+qEedPYUkH6dmi3mpQtFDhf0hrUbFB9LM3cICCphaO+AzFIZ2C3UyQ13eiC5KTaZrzWeqyePhtw8pjHYJsfYW8tyCdu2RUVvBlOhYnRsP7KDDGWuaWnNu3t1qQ1nY5Mdz6uwrJIwxL1jtvt+OmvxJV/loXJK0GzdFJrthN4tysbsoS1iolTVNJ1E2NxrTUWLyY+tWLRMZR72NSvVVPpGMGDlNlX0kFwtQVvSNNHTOtCPnW9yYbEywjNUHqpw4GqgcCxnKbF5l4HPU8X1GuDa/4+ORV+IZKs+Cis+pjqQxlezrJylP6m8vL6s2Z/b7jLafXl4eNwGHAJyv3lNP6bypXRZxTM7M2by91LvcjqpymSZydCC1kKFD7nWfbsUquqst3w+7ToeFin6vD7c/hvWmx45HY7No1Xmp5yLe3gv/nsjR7PF7S7C4zVPl82Y/d6Oz5vH4qq6B6Ywj6O4/lc/HoMZLGeYnSiLOtmAqo1nw7oECuVczNNockcge9BQOPqriXWjZSy1OHK2QZM+Dhu33JFKYCfUjT/E7PRyuo9DhrUKcdpy8P0ZJMnX3iNfvSPzjCh1/0zNVnXaOGw4FCfcFymjE8df+vEJhcL1q5+Hubps2vVNHdGaHVWJ5/MV/gUJHGlzGOTttxM2GVtSn9fTUz0dsenyZcB+r7Xf9qKVRD4TXVHguzAzopcNkJMrYKRnMZApHrmlIdlaoaCoCkZJBM9cvn1LNkugH9ONENTVl0Gj6NSJvkcz/XU8hBOzFPkx1CDOj9omy7UNGlznyvM4NZ+pTm65KflizN/VjQ3i1J5YX0SRbktNHlbxV+rzNwyLKPtVJ1edIcH9FWXsgRk007vAPLxlOQCG0FutVpXCOYInn3NNusrqBbWFDKjDz0EQcO/nObkJK85C1rZOnWppFQnTYquVBzMUNgytJZLdQQr70hdV9zfNu1K//5e4nFhvD3NKAwqHlg3usoJClxb2lDBSDwtdOnj6+jkAnAFfxapaueZAgAIW2f22syb7CgsMRQzZXyNLiIarrzqhRGNr3hleZi6QLy7XccubWtVq5cfeZ+/sKC9yyXCEJor37GwoKC4QntwcfUghqVEhQYWIMqaVwmm++g4MK8+6oJblCEwXoNZszOGN0uKXQvBe1rzETTV1theas5+0ZFDZWYocO1mbE9xXGnSCBI8R47RuFECCf+IRwsEapbxT2kwQ+TYi//UmFMu7EVroqE7avsC8VgGu9Nwod+8jDWOl5BRTu5OEqWKnHa0xEckghtLu7glE6zaYInEFPnT2FkTytNCYqV0jhR7ZDNWeMoDCLr5mg5HUUGkvzlFsaiB7llmagPqnVbiQO9m1p1gJwgmP14eEzRgeOcRK7vKsofN9bOOAt1Bd25kike7ZCCA6WTuCaoDC4vkLj8RdGofH4U+Pxh/9hhfmqDXZCJAD7veOgUJ2CMTCWyfmjFE5Rua0wCj5RoTlAcsNnZWvM5xNiaoLCnvqiAI4Iz5+HZAmdmT0AGfDPVJjvniYBp5RTI3DBzTxUEWX48GVxYNV2TCGcl6kzRp3B5PkzFdJ8BxzN3x5b+ed2K2oUujNOiA+frgz2Pf7RUQqbs5Yn1+D6ouN9pkJrVBbpifKMQnfXXr/C/Kzve/yjlsbTE7GxImZRFHU/dZQKih9WauTpk6XQWj/WPHK+QpPmLsaQw4yxz1VIkwPBtrgri/MO7S1Sev48DA4MkZA6n6xQ+IdeuRYLdbpkLI11a+Af2AEfV+jQ4jexYm6ST1foENqp2ZWI+vo7eOMt8i38wHEuU+g4fXufu5Sj/7DCf675vwks6UxidWoXh6ME1jdGoa+aIJ6m2Untvfqox637d1nYMF5kDVXXyfe8EE1k7bk6EXTjySoLurEf6n5NK1SvXbEPZTHUdzbpy890k3j5Xjv3+Ixt3n6mbV9VIj974vYZY55cPHoknFaH2+1LPfHhC/hDr13/30sIpaUQsr2mIeWbF+bNfuX1q1Fctf2NoML/PhDzXv61CtndbcbPf6GN+E3ofwz7jP+5RhAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQf4P2O7kEeZ50B8AAAAASUVORK5CYII="
-                         width = 16 px height= 16 px class="wd-posts-icon">
-<!--                Post author name-->
-                &nbsp; Bloomberg Opinion
-<!--                verified icon-->
-                <img src="https://ak.picdn.net/shutterstock/videos/1082667277/thumb/8.jpg?ip=x480"
-                      width = 30 px height= 16 px class="wd-posts-icon">
-<!--                Post metadata-->
-                <span class="wd-regular wd-posts-author-time">&#183; Yesterday</span>
-            </span>
-<!--            post headline-->
-            <div class="wd-posts-headline">Thinking about getting a booster? Read this first.</div>
-        </div>
-<!--        post thumbnail-->
-        <img src="https://media.istockphoto.com/vectors/get-your-vaccine-booster-badge-vector-id1335033355?k=20&m=1335033355&s=612x612&w=0&h=rkhZfmRULG9voic8Cb1mLDXju_IQfSzPkGxetm-vRao="
-             width="100" height="100" class="wd-posts-thumbnail" />
-    </div>
+        <!--      Second section start-->
+        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10">
+            <div class="wd-border-gray">
+                <!--      Justify content in between and align the list group items in the center-->
+                <div class="d-flex align-items-center my-2">
 
-<!--    post border-->
-<div class="wd-post-border wd-posts wd-flex-row">
-    <div>
-        <!--            post metadata-->
-        <span class="wd-posts-metadata">Science &#183; This morning</span>
-        <!--            post headline-->
-        <div class="wd-posts-headline">Nobel prize in physics awarded to pioneers of quantum information</div>
-    </div>
-    <!--        post thumbnail-->
-    <img
-            src="https://pbs.twimg.com/media/FeONo01XkAgpWpA?format=jpg&name=360x360" width="100" height="100" class="wd-posts-thumbnail" />
-</div>
+                    <!--      Search bar  -->
+                    <div
+                            class="wd-border-gray rounded-pill d-flex align-items-center py-1 ps-2 col-11 ms-2 me-1 bg-dark">
+                        <!--            icon-->
+                        <i class="fa-solid fa-search mx-2 wd-darkgrey"></i>
+                        <!--            text box-->
+                        <input class="ms-1 w-50 border-0 bg-dark" type="text"
+                               placeholder="Search Twitter"/>
+                    </div>
+                    <!--          Explore settings-->
+                    <a
+                            href="explore_settings.html"><i
+                            class="fa-solid fa-gear fs-4 p-1 text-white"></i></a>
+                </div> <!--        search section-->
 
-<!--    post border-->
-    <div class="wd-posts wd-post-border">
-<!--        post metadata-->
-        <div class="wd-posts-metadata">
-<!--            Post metadata-->
-            Trending in United States
-            <i class="fa-solid fa-ellipsis"></i>
-        </div>
-<!--        Post headline-->
-        <div class="wd-posts-headline">Wonder Bread</div>
-<!--        Post metadata-->
-        <div class="wd-posts-metadata">1,259 Tweets</div>
-    </div>
+                <!--      Navigation tabs with margin on both top and bottom -->
+                <ul class="my-1 mx-2 nav nav-tabs ">
+                    <!--          for you-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for_you.html">For you</a>
+                    </li>
+                    <!--          Trending-->
+                    <li class="nav-item">
+                        <a class="nav-link wd-darkgrey" href="trending.html">Trending</a>
+                    </li>
+                    <!--          News-->
+                    <li class="nav-item">
+                        <a class="nav-link wd-darkgrey" href="news.html">News</a>
+                    </li>
+                    <!--          Sports-->
+                    <li class="nav-item">
+                        <a class="nav-link wd-darkgrey" href="sports.html">Sports</a>
+                    </li>
+                    <!--          Entertainment (with size-based hide/unhide)-->
+                    <li class="nav-item d-none d-sm-none d-md-inline">
+                        <a class="nav-link wd-darkgrey" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
+
+                <!--        Main content with image and text-->
+
+                <!--        Main body image -->
+                <div class="position-relative">
+                    <img src="../img/spacex.jpeg" class="img-fluid w-90 wd-border-y" />
+                    <span class="text-white fs-4 fw-bold position-absolute start-0 bottom-0 p-2">
+            SpaceX's Starship
+        </span>
+                </div>
 
 
-</div>
+                <!--       post 1: -->
+                <div class="d-flex justify-content-between p-3">
+                    <!--        Web dev  post -->
+                    <div class="col-md-8 col-9">
+                        <!--            meta data-->
+                        <div class="wd-posts-metadata mb-1">Web Development</div>
+                        <!--            author-->
+                        <div class="fw-bold wd-posts-author mb-1">
+                            ReactJS
+                            <!--              verified-->
+                            <i class="fa-solid fa-circle-check mx-1"></i>
+                            <!--              time stamp-->
+                            <span class="wd-posts-metadata"> &middot 2h &nbsp</span>
+                        </div>
+                        <!--            post title-->
+                        <div class="wd-posts-title">
+                            React.js is a component based front end library that makes it
+                            very easy to build Single Page Applications or SPAs
+                        </div>
+                    </div>
+                    <!--          image-->
+                    <div class="my-auto col-md-2 col-3">
+                        <img src="../img/react.png" class="img-fluid wd-posts-thumbnail" />
+                    </div>
+
+                </div> <!-- end of post 1-->
+
+                <!--       start post 2: -->
+                <div class="d-flex justify-content-between p-3">
+                    <!--Post 2-->
+                    <div class="col-md-8 col-9">
+                        <!--            author-->
+                        <div class="fw-bold wd-posts-author mb-1">
+                            JavaScript
+                            <!--              verified-->
+                            <i class="fa-solid fa-circle-check mx-1"></i>
+                            <!--              time stamp-->
+                            <span class="wd-posts-metadata"> &middot 2h &nbsp</span>
+                        </div>
+                        <!--            post title-->
+                        <div class="wd-posts-title">
+                            Javascript is a programming language that can run on browsers as
+                            well as desktops
+                        </div>
+                        <!--            meta data-->
+                        <div class="mt-1 wd-posts-metadata mb-1">123K Tweets</div>
+                    </div>
+                    <!--          image-->
+                    <div class="my-auto col-md-2 col-3">
+                        <img src="../img/js.png" class="img-fluid wd-posts-thumbnail" />
+                    </div>
+
+                </div> <!-- end of post 2-->
+
+                <!--       start post 3: -->
+                <div class="d-flex justify-content-between p-3">
+                    <!--Post 2-->
+                    <div class="col-md-8 col-9">
+                        <!--            meta data-->
+                        <div class="wd-posts-metadata mb-1">Web Development</div>
+                        <!--            post title-->
+                        <div class="wd-posts-title">
+                            jQuery
+                        </div>
+                        <!--            meta data-->
+                        <div class="mt-1 wd-posts-metadata mb-1">123K Tweets</div>
+                    </div>
+                    <!--          image-->
+                    <div class="my-auto col-md-2 col-3">
+                        <img src="../img/jquery.png" class="img-fluid wd-posts-thumbnail" />
+                    </div>
+
+                </div> <!-- end of post 3-->
+
+                <!--       start post 4: -->
+                <div class="d-flex justify-content-between p-3">
+                    <!--Post 2-->
+                    <div class="col-md-8 col-9">
+                        <!--            meta data-->
+                        <div class="wd-posts-metadata mb-1">Web Development</div>
+                        <!--            author-->
+                        <div class="fw-bold wd-posts-author mb-1">
+                            NodeJS
+                            <!--              verified-->
+                            <i class="fa-solid fa-circle-check mx-1"></i>
+                            <!--              time stamp-->
+                            <span class="wd-posts-metadata"> &middot 2h &nbsp</span>
+                        </div>
+                        <!--            meta data-->
+                        <div class="mt-1 wd-posts-metadata mb-1">123K Tweets</div>
+                    </div>
+                    <!--          image-->
+                    <div class="my-auto col-md-2 col-3">
+                        <img src="../img/nodejs.png" class="img-fluid wd-posts-thumbnail" />
+                    </div>
+
+                </div> <!-- end of post 4-->
+            </div>
+
+        </div><!-- End of second section-->
+
+        <!--      Third section start-->
+        <div class="my-2 col-xxl-3 col-xl-3 col-lg-4 col-4 d-none d-lg-block">
+
+            <!--        list group-->
+            <div class="list-group">
+                <!--          title -->
+                <div class="list-group-item"> <span class="fw-bold">Who to follow</span></div>
+
+                <!--         item 1 -->
+                <div class="list-group-item">
+                    <!--            division for image & text content and the follow button-->
+                    <div class="d-flex align-items-center">
+                        <!--                image-->
+                        <img src="../img/java.jpeg" class="img-fluid me-2 wd-image-circular"/>
+                        <!--                image and text content-->
+                        <div class="flex-grow-1">
+                            <!--                title-->
+                            <div class="mb-1 fw-bold">Java<i class="mx-1 fa-solid fa-circle-check"></i></div>
+                            <!--                meta data-->
+                            @Java
+                        </div>
+                        <!--                Button-->
+                        <button type="button" class="btn btn-light rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div><!--end of item 1-->
+
+                <!--         item 2 -->
+                <div class="list-group-item">
+                    <!--            division for image & text content and the follow button-->
+                    <div class="d-flex align-items-center">
+                        <!--                image-->
+                        <img src="../img/relativityspace.png" class="img-fluid me-2 wd-image-circular"/>
+                        <!-- image and text content-->
+                        <div class="flex-grow-1">
+                            <!-- title-->
+                            <div class="mb-1 fw-bold">Relativity Space<i class="mx-1 fa-solid fa-circle-check"></i></div>
+                            <!--                meta data-->
+                            @relativityspace
+                        </div>
+                        <!--                Button-->
+                        <button type="button" class="btn btn-light rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+                <!--          end of item 2-->
+
+                <!--         item 3 -->
+                <div class="list-group-item">
+                    <!--            division for image & text content and the follow button-->
+                    <div class="d-flex align-items-center">
+                        <!--                image-->
+                        <img src="../img/virgingalactic.svg" class="img-fluid me-2 wd-image-circular"/>
+                        <!-- image and text content-->
+                        <div class="flex-grow-1">
+                            <!-- title-->
+                            <div class="mb-1 fw-bold">Relativity Space<i class="mx-1 fa-solid fa-circle-check"></i></div>
+                            <!--                meta data-->
+                            @virgingalactic
+                        </div>
+                        <!--                Button-->
+                        <button type="button" class="btn btn-light rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+                <!--          end of item 3-->
+
+                <!--         item 4 -->
+                <div class="list-group-item">
+                    <!--            division for image & text content and the follow button-->
+                    <div class="d-flex align-items-center">
+                        <!--                image-->
+                        <img src="../img/nasa.png" class="img-fluid me-2 wd-image-circular"/>
+                        <!-- image and text content-->
+                        <div class="flex-grow-1">
+                            <!-- title-->
+                            <div class="mb-1 fw-bold">Relativity Space<i class="mx-1 fa-solid fa-circle-check"></i></div>
+                            <!--                meta data-->
+                            @nasa
+                        </div>
+                        <!--                Button-->
+                        <button type="button" class="btn btn-light rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+                <!--          end of item 4-->
+
+
+                <!--         item 5 -->
+                <div class="list-group-item">
+                    <!--            division for image & text content and the follow button-->
+                    <div class="d-flex align-items-center">
+                        <!--                image-->
+                        <img src="../img/tesla.png" class="img-fluid me-2 wd-image-circular"/>
+                        <!-- image and text content-->
+                        <div class="flex-grow-1">
+                            <!-- title-->
+                            <div class="mb-1 fw-bold">Tesla
+                                <i class="mx-1 fa-solid fa-circle-check"></i></div>
+                            <!--                meta data-->
+                            @tesla
+                        </div>
+                        <!--                Button-->
+                        <button type="button" class="btn btn-light rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+                <!--          end of item 5-->
+
+                <!--            end of list group-->
+            </div>
+
+            <!--            end of item 2-->
+
+
+        </div> <!-- End of third section-->
+
+    </div><!-- End of row division-->
+
+</div> <!--    End of container-->
+
+</div><!--End of Main Division-->
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
