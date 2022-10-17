@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="index.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+<body>
+    <h1 id = "title">Assignment 5 - JavaScript</h1>
+    <h2 id = "subtitle">Writing to the DOM</h2>
+
+    <script>
+        document.write('Welcome to JavaScript!')
+    </script>
+
+    <h2>Calculating an HTML string</h2>
+    <script>
+        const renderTodos = (tasks) => `
+    <ul>
+      ${tasks.map(task => `<li>${task}</li>`
+        ).join('')}
+    </ul>`;
+        const tasks = ['Pickup kids', 'Feed dogs']
+        let html = renderTodos(tasks);
+        document.write(html);
+    </script>
+
+    <script src="index.js"></script>
+
+
+
+</body>
+
+
+</html>
