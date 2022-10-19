@@ -3,7 +3,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
     return(`
        <!--      Second section start-->
-       <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10">
+       <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10">
             <!--            Top section: Search-->
             
             <!--      Justify content in between and align the list group items in the center-->

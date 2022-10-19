@@ -16,7 +16,7 @@ function exploreComponent() {
    
     ${ExploreComponent()}
     
-    <div class="col-xxl-4 col-xl-4 col-lg-4 col-4 d-none d-lg-block col-5">
+    <div class="col-xxl-3 col-xl-4 col-lg-4 col-4 d-none d-lg-block col-5">
                 ${WhoToFollowList()}
     </div>
             
