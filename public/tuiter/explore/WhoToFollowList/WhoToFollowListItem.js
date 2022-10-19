@@ -12,18 +12,18 @@ const WhoToFollowListItem = (item) => {
             <!--            division for image & text content and the follow button-->
             <div class="d-flex align-items-center">
                 <!--                image-->
-                <img src="${item.avatarIcon}" class="img-fluid me-2 wd-image-circular"/>
+                <img src="${item.avatarIcon}" class="img-fluid me-1 wd-image-circular"/>
                 <!--                image and text content-->
-                <div class="flex-grow-1">
+                <div class="flex-grow-1 flex-nowrap">
                     <!--                title-->
                     <div class="mb-1">
-                        ${item.userName}<i class="mx-1 fa-solid fa-circle-check"></i>
+                      ${item.userName}<i class="mx-1 fa-solid fa-circle-check"></i>
                     </div>
                     <!--                meta data-->
                     @${item.handle}
                 </div>
                 <!--  Button-->
-                <button type="button" class="btn btn-primary rounded-pill">
+                <button type="button" class="btn btn-primary rounded-pill btn-group-sm">
                     Follow
                 </button>
             </div>

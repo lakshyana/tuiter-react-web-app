@@ -3,7 +3,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
     return(`
        <!--      Second section start-->
-       <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10">
+       <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10">
             <!--            Top section: Search-->
             
             <!--      Justify content in between and align the list group items in the center-->
@@ -52,7 +52,7 @@ const ExploreComponent = () => {
            <!--        Main body image -->
            <div class="position-relative">
                 <img src="img/spacex.jpeg" class="img-fluid w-90 wd-border-y" />
-                <span class="text-white fs-4 fw-bold position-absolute start-0 bottom-0 p-2">
+                <span class="text-light fs-2 fw-bold position-absolute start-0 bottom-0 p-2">
                 SpaceX's Starship
                  </span>
             </div>

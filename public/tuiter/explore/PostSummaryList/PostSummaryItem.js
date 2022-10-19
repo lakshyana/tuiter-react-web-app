@@ -3,7 +3,7 @@
 const PostSummaryItem = (post) => {
     return (`
     <!--       post 1: -->
-    <div class="d-flex justify-content-between p-3">
+    <div class="d-flex justify-content-between p-3 bg-light wd-border-gray">
         <!--  post -->
         <div class="col-md-8 col-9">
             <!--       meta data-->
