@@ -2,6 +2,7 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 // import PostSummaryList from "../PostSummaryList/index.js";
 import PostList from "../PostList/index.js";
+import PostSummaryList from "../PostSummaryList";
 
 
 function homeScreen() {
@@ -21,13 +22,12 @@ function homeScreen() {
     
     
     
-   </div>
- 
-            
-  </div>
+   <div class="col-xxl-3 col-xl-4 col-lg-4 col-4 d-none d-lg-block col-5 small">
+                ${PostSummaryList()}
+    </div>
    `);
 }
-$(homeScreen());
+export default (homeScreen());
 
 // <div className="col-xxl-3 col-xl-4 col-lg-4 col-4 d-none d-lg-block col-5">
 //     ${WhoToFollowList()}
