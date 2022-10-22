@@ -4,7 +4,12 @@ const PostItem = (item) => {
     return (`
         <!--Post 1 -->
         <!--  Bookmark post content section-->
-        <div class="wd-content-section wd-border-bottom">
+        
+        <div class="d-flex justify-content-between p-3 wd-border-bottom">
+        
+<!--        &lt;!&ndash;  post &ndash;&gt;-->
+<!--        <div class="col-md-9 col-9 wd-border-gray">-->
+        
             <!--      Circular thumbnail image-->
             <img src="${item.author.icon}"
                  class="wd-thumbnail-circular"/>
@@ -23,12 +28,13 @@ const PostItem = (item) => {
                 </div>
                 <!--        Content message-->
                 <div class="wd-content-message">
-                    @${item.post.title} 
+                    ${item.post.title}
                 </div>
+                
                 <!--        Content image-->
-                <img class="wd-content-image"
+                <img class="img-fluid border border-secondary wd-b-top-r"
                      src="${item.post.thumbnail}"/>
-                <div class="wd-content-caption-section">
+                <div class="wd-content-caption-section border border-secondary border-top-0 wd-b-bottom-r">
                     <div class="wd-content-caption-title">${item.post.caption} 
                     </div>
                     <div class="wd-content-caption-text">${item.post.message}</div>
@@ -39,14 +45,14 @@ const PostItem = (item) => {
         
                 <!--       Stats -->
                 <!--        Stats Section-->
-                <div class="wd-stats-section">
+                <div class="wd-stats-section d-flex justify-content-between me-5">
                     <!--          comment link-->
                     <a href="#" class="wd-stats-anchor">
                         <!--            Comment color style-->
                         <span class="wd-stats-regular">
         <!--                            comment icon-->
-                            <i class="wd-margin-right fa-regular fa-comment"></i>
-                                    22
+                            <i class="wd-margin-right fa-regular fa-comment me-2"></i>
+                                    ${item.metadata.comments}
                                 </span>
                     </a>
                     <!--          Retweet link-->
@@ -55,7 +61,7 @@ const PostItem = (item) => {
                         <span class="wd-stats-regular">
         <!--                            Retweet icon-->
                             <i class="wd-margin-right fa-solid fa-retweet"></i>
-                                    9
+                                    ${item.metadata.retuits}
                                 </span>
                     </a>
                     <!--          heart link-->
@@ -64,7 +70,7 @@ const PostItem = (item) => {
                         <span class="wd-stats-selected">
         <!--                            heart icon-->
                             <i class="wd-margin-right fa-solid fa-heart"></i>
-                                    37
+                                    ${item.metadata.likes}
                                 </span>
                     </a>
                     <!--          Upload link-->
@@ -78,6 +84,8 @@ const PostItem = (item) => {
                 </div>
         
             </div>
+            
+<!--            </div>-->
         </div>
         <!--    End of post 1-->
 

@@ -70,7 +70,7 @@
 .wd-content-metadata {
     color: darkgray;
     font-weight: normal;
-    font-size: small;
+    font-size: x-small;
 }
 
 /*Content message*/
@@ -82,27 +82,40 @@
     max-width: 506px;
 }
 
-/*Content image*/
-.wd-content-image {
-    width: 504px;
-    height: 264px;
+
+/*Content image rounded*/
+.wd-b-top-r {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    object-fit: cover;
-    border-width: 1px;
-    border-style: solid;
-    border-color: lightgray;
 }
+
+/*Content image rounded*/
+.wd-b-bottom-r {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+/*!*Content image*!*/
+/*.wd-content-image {*/
+/*    width: 504px;*/
+/*    height: 264px;*/
+/*    border-top-left-radius: 16px;*/
+/*    border-top-right-radius: 16px;*/
+/*    object-fit: cover;*/
+/*    border-width: 1px;*/
+/*    border-style: solid;*/
+/*    border-color: lightgray;*/
+/*}*/
 
 /*Content caption section*/
 .wd-content-caption-section {
     /*Note: width = 504 max width -  margins of 16 on both sides*/
-    width: 480px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: lightgray;
+    /*width: 480px;*/
+    /*border-bottom-left-radius: 16px;*/
+    /*border-bottom-right-radius: 16px;*/
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-color: lightgray;*/
     padding: 12px;
 }
 
@@ -116,7 +129,7 @@
 /*Content caption text*/
 .wd-content-caption-text {
     font-size: 15px;
-    color: lightgray;
+    color: darkgray;
     margin-top: 4px;
 }
 

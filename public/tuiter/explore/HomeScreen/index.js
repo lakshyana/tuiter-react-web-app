@@ -15,7 +15,7 @@ function homeScreen() {
     
     
     <!--      Second section start-->
-    <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10">
+    <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10 wd-border-gray">
     ${PostList()}
     </div>
     
