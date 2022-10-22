@@ -47,36 +47,38 @@ const PostItem = (item) => {
                 <!--        Stats Section-->
                 <div class="wd-stats-section d-flex justify-content-between me-5">
                     <!--          comment link-->
-                    <a href="#" class="wd-stats-anchor">
+                    <a href="#" class="text-decoration-none">
                         <!--            Comment color style-->
-                        <span class="wd-stats-regular">
+                        <span class="text-secondary small">
         <!--                            comment icon-->
                             <i class="wd-margin-right fa-regular fa-comment me-2"></i>
                                     ${item.metadata.comments}
                                 </span>
                     </a>
+                    
                     <!--          Retweet link-->
-                    <a href="#" class="wd-stats-anchor">
+                    <a href="#" class="text-decoration-none">
                         <!--            Retweet color style-->
-                        <span class="wd-stats-regular">
+                        <span class="text-secondary small">
         <!--                            Retweet icon-->
                             <i class="wd-margin-right fa-solid fa-retweet"></i>
                                     ${item.metadata.retuits}
                                 </span>
                     </a>
+                    
                     <!--          heart link-->
-                    <a href="#" class="wd-stats-anchor">
+                    <a href="#" class="text-decoration-none">
                         <!--            heart color style-->
-                        <span class="wd-stats-selected">
+                        <span class="text-secondary small">
         <!--                            heart icon-->
                             <i class="wd-margin-right fa-solid fa-heart"></i>
                                     ${item.metadata.likes}
-                                </span>
+                            </span>
                     </a>
                     <!--          Upload link-->
-                    <a href="#" class="wd-stats-anchor">
+                    <a href="#" class="text-decoration-none">
                         <!--            Upload color style-->
-                        <span class="wd-stats-regular">
+                        <span class="text-secondary small">
         <!--                            upload icon-->
                             <i class="fa fa-upload" aria-hidden="true"></i>
                                 </span>
