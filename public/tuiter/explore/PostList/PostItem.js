@@ -5,7 +5,7 @@ const PostItem = (item) => {
         <!--Post 1 -->
         <!--  Bookmark post content section-->
         
-        <div class="d-flex justify-content-between p-3 wd-border-bottom">
+        <div class="d-flex justify-content-between p-3 border border-secondary">
         
 <!--        &lt;!&ndash;  post &ndash;&gt;-->
 <!--        <div class="col-md-9 col-9 wd-border-gray">-->
