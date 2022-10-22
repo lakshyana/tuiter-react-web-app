@@ -7,7 +7,8 @@ const NavigationSidebar = (selected) => {
      <!-- continue rest of list, e.g., Home, Explore, Notifications,  Messages, etc. -->
 <!--     Parameterized Sidebar for selected component-->
      <!--     Home-->
-     <a href="../HomeScreen/home.html" 
+     
+     <a href="HomeScreen/home.html" 
         class="list-group-item list-group-item-action ${selected == 'home' ? 'active' : ''}">
         <!--        Home symbol-->       
         
@@ -17,7 +18,7 @@ const NavigationSidebar = (selected) => {
      </a>
      
     <!--        Explore-->
-    <a href="../index.html"
+    <a href="./index.html"
         class="list-group-item list-group-item-action ${selected == 'explore' ? 'active' : ''}">
         <!--          Hashtag symbol-->
         <i class="fa-solid fa-hashtag mx-2"></i>
