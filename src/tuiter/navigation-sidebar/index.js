@@ -4,14 +4,16 @@ import "../../vendors/fontawesome/css/all.min.css";
 
 import React from "react";
 import {Link} from "react-router-dom";
-
 import {useLocation} from "react-router";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = ({selected="explore"}) => {
     const {pathname} = useLocation();
-    // console.log("Path name in nav sb:"+pathname)
     const paths = pathname.split('/')
-    const active = paths[2];
+    const active = paths.length === 2 ? paths[2] : selected ;
+    console.log("Path name in nav sb:"+pathname)
+    console.log("paths: " + paths)
+    console.log("active: " + active)
+
     return (
         <div className="list-group">
             <a className="list-group-item">
@@ -31,27 +33,27 @@ const NavigationSidebar = () => {
                 <span className={"d-none d-xl-inline"}>Labs</span>
             </Link>
 
-            <a className={`list-group-item ${active === 'explore'?'active':''}`}>
+            <a className={`list-group-item ${active === 'notifications'?'active':''}`}>
                 <i className="fa-solid fa-bell mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Notifications</span>
             </a>
 
-            <a className={`list-group-item ${active === 'more'?'active':''}`}>
+            <a className={`list-group-item ${active === 'messages'?'active':''}`}>
                 <i className="fa-solid fa-envelope mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Messages</span>
             </a>
 
-            <a className={`list-group-item ${active === 'more'?'active':''}`}>
+            <a className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
                 <i className="fa-solid fa-bookmark mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Bookmarks</span>
             </a>
 
-            <a className={`list-group-item ${active === 'more'?'active':''}`}>
+            <a className={`list-group-item ${active === 'lists'?'active':''}`}>
                 <i className="fa-solid fa-list mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Lists</span>
             </a>
 
-            <a className={`list-group-item ${active === 'more'?'active':''}`}>
+            <a className={`list-group-item ${active === 'profile'?'active':''}`}>
                 <i className="fa-solid fa-user mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Profile</span>
             </a>

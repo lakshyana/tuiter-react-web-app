@@ -18,12 +18,6 @@
     "avatarIcon": "spacex.png"
   },
   {
-    "_id": 678,
-    "userName": "Java",
-    "handle": "Java",
-    "avatarIcon": "java.png"
-  },
-  {
     "_id": 910,
     "userName": "Relativity Space",
     "handle": "relativityspace",
