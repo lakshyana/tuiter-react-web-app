@@ -1,4 +1,5 @@
 import React from "react";
+import "../../index.css";
 import ItemHistory from "./post-item-history";
 
 const PostItem = (
