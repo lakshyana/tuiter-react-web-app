@@ -3,14 +3,19 @@ const PostItem = (
     {
         post = {
             "action": "retuit",
-            "source_user_name": "Elon Musk",
+            "metadata" : {
+                "source_user_name": "Elon Musk",
+                "source_handle":"",
+                "source_timestamp": "",
+                "share_title":""
+            },
             "user_name": "Spacex",
             "user_handle": "SpaceX",
-            "user_icon": "/img/spacex.png",
+            "user_icon": "spacex.png",
             "timestamp": "23h",
             "post_title": "Dennis and Akiko Tito are the first two crewmembers on Starship’s second commercial spaceflight around the Moon → http://spacex.com/updates",
             "post_link" : "spacex.com/updates",
-            "post_thumbnail": "../images/inspiration4x.jpg",
+            "post_thumbnail": "post1.jpg",
             "post_caption": "Countdown Inspirational4 Mission to Space | Netflix Official Site",
             "post_details": "From training to launch launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space mission.",
             "source":"netflix.com",
@@ -26,7 +31,7 @@ const PostItem = (
                 {post.action === "retuit" ? (
                     <span>
                         <i className="fa-solid fa-retweet"></i>
-                        {` ${post.source_user_name} Retweeted`}
+                        {` ${post.metadata.source_user_name} Retweeted`}
                     </span>
                     )
                     : ("")}
@@ -46,8 +51,28 @@ const PostItem = (
                     <div className="px-2">
                         <img className="img-fluid w-90 rounded-3" src={`/img/${post.post_thumbnail}`}/>
                     </div>
+                    <div className="d-flex justify-content-between text-muted">
+                        <span className="text-secondary">
+                    <i className="fa-regular fa-comment me-3"></i>
+                            {post.comments}
+                </span>
+                <span className="text-secondary">
+                    <i className="fa-solid fa-retweet me-3"></i>
+                            {post.retuits}
+                </span>
+
+                <span className="text-secondary">
+                    <i className="fa-solid fa-heart me-3"></i>
+                            {post.likes}
+                </span>
+                <span className="text-secondary me-5">
+                    <i className="fa-solid fa-upload me-3"></i>
+                </span>
+                    </div>
                 </div>
             </div>
+
+
 
         </li>
         );
