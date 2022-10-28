@@ -5,7 +5,7 @@ export default [
         author: {
             name: 'Elon Musk',
             handle: 'elonmusk',
-            icon: '../img/elonpp.png',
+            icon: '../../../../src/img/elonpp.png',
         },
 
         post: {
@@ -31,13 +31,13 @@ export default [
         author: {
             name: 'New York Post',
             handle: 'nypost',
-            icon: '../img/nypost.png',
+            icon: '../../../../src/img/nypost.png',
         },
 
         post: {
             title: 'Grimes seen reading Karl Marx following split with world\'s richest man Elon'
                    + ' Musk trib.al/nx2Gfaq',
-            thumbnail: '../img/grimes.jpeg',
+            thumbnail: '../../../../src/img/grimes.jpeg',
             caption: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
             message: 'From training to launch to landing, this all-access docuseries rides along'
                      + ' with the Inspiration4 crew on the first all-civilian orbital space...',

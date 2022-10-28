@@ -3,7 +3,6 @@ import Styles from "./styles";
 import ConditionalOutput
     from "./conditional-output";
 import TodoList from "./todo/TodoList";
-// import TodoItem from "./todo/TodoItem";
 
 function Assignment6() {
     return (

@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*Circular thumbnail image*/
+.wd-image-circular {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}

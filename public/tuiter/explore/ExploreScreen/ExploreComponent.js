@@ -51,7 +51,7 @@ const ExploreComponent = () => {
            
            <!--        Main body image -->
            <div class="position-relative">
-                <img src="../img/spacex.jpeg" class="img-fluid w-90 wd-border-y" />
+                <img src="../../../img/spacex.jpeg" class="img-fluid w-90 wd-border-y" />
                 <span class="text-light fs-2 fw-bold position-absolute start-0 bottom-0 p-2">
                 SpaceX's Starship
                  </span>

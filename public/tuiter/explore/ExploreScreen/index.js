@@ -9,6 +9,7 @@ function exploreComponent() {
     $('#wd-explore').append(`
 <!--       <h2>Explore</h2>-->
   <div class="row mt-3 flex-nowrap">
+<!--  -->
    <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-3 col-3">
    <!--<h3>Navigation Sidebar</h3>-->
     ${NavigationSidebar('explore')}
