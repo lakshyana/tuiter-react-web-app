@@ -23,7 +23,7 @@ const PostItem = (item) => {
                         <span class="wd-content-metadata">
                         @${item.author.handle} &#183; 
                         ${item.metadata.time} </span>
-                        </span>
+                    </span>
                     <i class="fa-solid fa-ellipsis wd-regular"></i>
                 </div>
                 <!--        Content message-->

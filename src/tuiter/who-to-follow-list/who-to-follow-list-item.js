@@ -8,7 +8,7 @@ const WhoToFollowListItem = (
         <li className="list-group-item flex-grow-1">
             <div className="row">
                 <div className="col-2">
-                    <img className="img-fluid me-1 rounded-circle wd-image-circular" src={`/img/${who.avatarIcon}`}/>
+                    <img width = {48} className="me-1 rounded-circle" src={`/img/${who.avatarIcon}`}/>
 
                 </div>
                 <div className="col-8">

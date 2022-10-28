@@ -6,10 +6,11 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
 
-const NavigationSidebar = ({selected="explore"}) => {
+const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
-    const active = paths.length === 2 ? paths[2] : selected ;
+    // const active = paths.length === 2 ? paths[2] : selected ;
+    const active = paths[2];
     console.log("Path name in nav sb:"+pathname)
     console.log("paths: " + paths)
     console.log("active: " + active)
