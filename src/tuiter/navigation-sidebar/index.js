@@ -1,6 +1,7 @@
 
 import "../../vendors/bootstrap/css/bootstrap.min.css"
 import "../../vendors/fontawesome/css/all.min.css";
+import "../../index.css"
 
 import React from "react";
 import {Link} from "react-router-dom";
@@ -21,7 +22,7 @@ const NavigationSidebar = () => {
                 <i className="fab fa-twitter"></i>
                 <span className={"d-none d-xl-inline"}> Tuiter</span>
             </a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/" className={`list-group-item ${active === ''?'active':''}`}>
                 <i className="fa-solid fa-house mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Home</span>
             </Link>
@@ -31,6 +32,7 @@ const NavigationSidebar = () => {
             </Link>
 
             <Link to="/" className="list-group-item">
+                <i className="fa-solid fa-book mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Labs</span>
             </Link>
 

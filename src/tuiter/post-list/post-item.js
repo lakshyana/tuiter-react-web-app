@@ -92,7 +92,7 @@ const PostItem = (
                         </span>
 
                         <span className="text-secondary">
-                            <i className="fa-solid fa-heart me-3"></i>
+                            <i className="fa-solid fa-heart me-3 text-danger"></i>
                                     {post.likes}
                         </span>
                         <span className="text-secondary me-5">

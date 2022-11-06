@@ -1,8 +1,9 @@
 import Labs from "./Labs";
 import HelloWorld from "./Labs/hello-world/hello-world";
 import Tuiter from "./tuiter";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Link} from "react-router-dom";
 import {Routes, Route} from "react-router";
+import Nav from "./nav";
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         <BrowserRouter>
             <div className="container">
                 <Routes>
-                    <Route index element={<Labs/>}/>
+                    <Route path={"/*"} element={<Labs/>}/>
                     <Route path="/hello" element={<HelloWorld/>}/>
                     <Route path="/tuiter/*" element={<Tuiter/>}/>
                 </Routes>
@@ -21,4 +22,4 @@ function App() {
 export default App;
 
 
-//For nested routes, redefine tuiter route in app.js
+// For nested routes, redefine tuiter route in app.js

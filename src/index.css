@@ -1,3 +1,11 @@
+
+/*html content margin and background*/
+html {
+  font-size: small;
+  /*font-family: 'Arial Rounded MT';*/
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,13 +14,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 /*  added*/
-  font-size: small;
+  font-size: x-small;
 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  /*  added*/
+  font-size: x-small;
 }
 
 
@@ -24,3 +34,58 @@ code {
 }
 
 
+/*font awesome icons with no fill*/
+.wd-no-fill{
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gray;
+}
+
+
+
+.wd-bio-handle{
+  width: 100%;
+  color: gray;
+}
+
+.wd-bio-content{
+  width: 100%;
+  margin: 10px 0px 0px 10px;
+}
+
+.wd-bio-other{
+  width: 100%;
+  margin: 10px 0px 0px 10px;
+  color: gray;
+}
+
+.wd-bio-icon{
+  margin-right: 30px;
+  margin-left: 5px;
+}
+
+.wd-following-followers-container{
+  width: 100%;
+  margin: 10px 0px 0px 10px;
+}
+
+.wd-following-followers{
+  margin-right: 30px;
+  color: grey;
+}
+
+.wd-save{
+  width: 120px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: black 1px solid;
+  padding: 0px;
+  /*margin: 10px;*/
+}
+
+.wd-edit-profile-top{
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

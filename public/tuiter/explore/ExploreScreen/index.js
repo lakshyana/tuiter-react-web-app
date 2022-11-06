@@ -30,5 +30,6 @@ $(exploreComponent);
 // <div class="col-10 col-lg-7 col-xl-6 bg-primary text-white">
 //  ${ExploreComponent()}
 // </div>
+
 // <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 bg-danger text-white">
 //    ${WhoToFollowList()

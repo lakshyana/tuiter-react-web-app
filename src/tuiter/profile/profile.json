@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Lakshyana",
+    "lastName": "KC",
+    "handle": "lakshyana",
+    "profilePicture": "/img/profile-icon.jpg",
+    "bannerPicture": "/img/fall_banner.jpg",
+    "bio": "Learning web development one Tuiter page at a time!",
+    "website": "youtube.com/lakshyana",
+    "location": "Boston, MA",
+    "dateOfBirth": "04/01/1994",
+    "dateJoined": "4/2015",
+    "tuitCount": "2,300",
+    "followingCount": 10,
+    "followersCount": 2
+  }
+
+]
