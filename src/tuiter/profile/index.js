@@ -1,5 +1,3 @@
-//TODO UPDATE PROFILE INDEX
-
 import React from "react";
 
 //Import profile from profile list
