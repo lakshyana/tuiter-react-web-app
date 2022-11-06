@@ -76,26 +76,3 @@ const ProfileListItem = ({
 
 export default ProfileListItem;
 
-
-//TODO REMOVE
-
-//     <i className="fas fa-globe"></i> <span
-//     className="wd-bio-icon">{profile.location}</span>
-//     <i className="fas fa-birthday-cake"></i> <span
-//     className="wd-bio-icon">Born {profile.dateOfBirth}</span>
-//     <i className="fas fa-calendar-alt"></i> <span
-//     className="wd-bio-icon">Joined {profile.dateJoined}</span>
-// </h6>
-// <h6 className="wd-following-followers-container">
-//     {profile.followingCount} <span className="wd-following-followers">Following</span>
-//     {profile.followersCount} <span className="wd-following-followers">Followers</span>
-// </h6>
-
-
-// <i className="fas fa-arrow-left float-start px-1 py-2 me-3"></i>
-
-// <div className="pt-1 pb-1">
-//     <i className="fas fa-arrow-left float-start ps-4 pt-2 pb-2 pe-4"></i>
-//     <h5> {profile.firstName} {profile.lastName}</h5>
-// </div>
-
