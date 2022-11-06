@@ -1,6 +1,7 @@
 
 import React from "react";
 import {Link} from "react-router-dom";
+import "../../index.css"
 
 
 const ProfileListItem = ({
@@ -20,39 +21,81 @@ const ProfileListItem = ({
                                  "tuitCount": 100
                              }
                          }) => {
-    return (<>
-        <li className="list-group-item">
+    return (<div className={"border border-secondary border-opacity-50"}>
+
+        <li className="list-group-item border-0">
             <div>
                 <i className="fas fa-arrow-left float-start px-1 py-2 me-3"></i>
                 <span className={"column"}>
                    <h6 className={"fw-bolder m-0 p-0"}> {profile.firstName} {profile.lastName}</h6>
-                    <span className={"text-muted small"}>{profile.tuitCount} Tweets</span>
+                    <span className={"text-muted wd-xsmall"}>{profile.tuitCount} Tweets</span>
                 </span>
             </div>
-        </li>
 
             <div className="position-relative">
                 <img className="img-fluid" src={profile.bannerPicture}/>
-                <img height={100} width= {100} className="rounded-circle position-absolute top-50 start-0 ms-2 mt-3" src={profile.profilePicture}/>
+                <img height={100} width= {100} className="rounded-circle position-absolute top-50 start-0 ms-2 ps-1 mt-2" src={profile.profilePicture}/>
             </div>
 
-            <div className="w-100">
-                <Link to="/tuiter/edit-profile">
-                    <button className="btn btn-outline-light btn-sm rounded-pill border-secondary border-opacity-25 float-end mt-2 me-2">
-                        <span className="text-black fw-bolder small">Edit profile</span>
-                    </button>
-                </Link>
-            </div>
-        <span className={"row ms-2 mt-4"}>
-            <h6 className="w-100 fw-bold m-0 p-0">{profile.firstName} {profile.lastName}</h6>
-            <span className="m-0 p-0 small wd-bio-handle">@{profile.handle}</span>
-        </span>
+            <Link to="/tuiter/edit-profile">
+                <button className="btn btn-outline-light btn-sm rounded-pill border-secondary border-opacity-25 float-end mt-2 me-3">
+                    <span className="text-black fw-bolder small">Edit profile</span>
+                </button>
+            </Link>
 
-        </>
+            <div className={"row ms-2 mt-5 pt-4 w-100"}>
+                <h6 className="fw-bold m-0 p-0">{profile.firstName} {profile.lastName}</h6>
+                <span className="p-0 m-0 small text-muted wd-xsmall">@{profile.handle}</span>
+                <span className="p-0 mt-2 text-dark small fw-normal">{profile.bio}</span>
+            </div>
+
+            <div className={"row ms-2"}>
+            <span className="p-0 text-muted fw-normal wd-xsmall">
+                <i className="fa-solid fa-location-dot me-2"></i>
+                {profile.location}
+                <i className="fa-solid fa-cake-candles ms-3 me-2"></i>
+                Born {profile.dateOfBirth}
+                <i className="fa-solid fa-calendar-days ms-3 me-2"></i>
+                Joined {profile.dateJoined}
+            </span>
+                <span className={"p-0 wd-xsmall text-secondary me-3 mt-2"}>
+                <span className={"fw-bold text-dark me-1"}>{profile.followingCount}</span>
+                Following
+                <span className={"fw-bold text-dark ms-3 me-1"}>{profile.followersCount}</span>
+                Followers
+            </span>
+
+            </div>
+        </li>
+
+
+
+        </div>
         );
 }
 
 export default ProfileListItem;
 
 
+//TODO REMOVE
+
+//     <i className="fas fa-globe"></i> <span
+//     className="wd-bio-icon">{profile.location}</span>
+//     <i className="fas fa-birthday-cake"></i> <span
+//     className="wd-bio-icon">Born {profile.dateOfBirth}</span>
+//     <i className="fas fa-calendar-alt"></i> <span
+//     className="wd-bio-icon">Joined {profile.dateJoined}</span>
+// </h6>
+// <h6 className="wd-following-followers-container">
+//     {profile.followingCount} <span className="wd-following-followers">Following</span>
+//     {profile.followersCount} <span className="wd-following-followers">Followers</span>
+// </h6>
+
+
+// <i className="fas fa-arrow-left float-start px-1 py-2 me-3"></i>
+
+// <div className="pt-1 pb-1">
+//     <i className="fas fa-arrow-left float-start ps-4 pt-2 pb-2 pe-4"></i>
+//     <h5> {profile.firstName} {profile.lastName}</h5>
+// </div>
 

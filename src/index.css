@@ -26,6 +26,11 @@ code {
 }
 
 
+/*Extra small font*/
+.wd-xsmall {
+  font-size: x-small;
+}
+
 /*Circular thumbnail image*/
 .wd-icon-circular {
   width: 48px;
@@ -43,10 +48,6 @@ code {
 
 
 
-.wd-bio-handle{
-  width: 100%;
-  color: gray;
-}
 
 .wd-bio-content{
   width: 100%;
