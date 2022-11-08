@@ -25,7 +25,10 @@ const ProfileListItem = ({
 
         <li className="list-group-item border-0">
             <div>
-                <i className="fas fa-arrow-left float-start px-1 py-2 me-3"></i>
+                <Link //Path to edit profile
+                    to="/tuiter/">
+                <i className="fas fa-arrow-left float-start px-1 py-2 me-3 text-dark"></i>
+                </Link>
                 <span className={"row"}>
                    <h6 className={"fw-bold m-0 p-0"}> {profile.firstName} {profile.lastName}</h6>
                     <span className={"text-muted wd-xsmall p-0 mb-1"}>{profile.tuitCount} Tweets</span>
