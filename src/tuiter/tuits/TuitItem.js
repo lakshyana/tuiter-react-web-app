@@ -40,8 +40,3 @@ const TuitItem = ({
     );
 };
 export default TuitItem;
-
-
-// <i className="fa-solid fa-ellipsis text-muted"></i>
-
-// <div className="fw-bolder">{tuit.tuit_title}</div>

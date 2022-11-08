@@ -1,4 +1,4 @@
-//TODO Update Profile list
+
 
 import React from "react";
 // import hook to retrieve state from reducer

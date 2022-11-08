@@ -45,10 +45,8 @@ const todosSlice = createSlice({
             });
         },
 
-        // new deleteTodo function extracts
-        // index from action's payload and
-        // uses it to splice out the todo to
-        // be deleted
+        // new deleteTodo function extracts index from action's payload and
+        // uses it to splice out the to-do to be deleted
         deleteTodo(state, action) {
             const index = action.payload
             state.splice(index, 1)

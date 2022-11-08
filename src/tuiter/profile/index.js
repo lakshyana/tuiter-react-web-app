@@ -1,7 +1,7 @@
 import React from "react";
 
 //Import profile from profile list
-import ProfileList from "./ProfileList"; //TODO update the link
+import ProfileList from "./ProfileList";
 
 import "../../index.css";
 

@@ -22,6 +22,9 @@ import { configureStore } from '@reduxjs/toolkit';
 // import the Provider component
 import {Provider} from "react-redux";
 
+//Edit profile component
+import EditProfileComponent from "./edit-profile";
+
 // configure the store
 const store = configureStore(
     {reducer: {who: whoReducer,
@@ -31,8 +34,6 @@ const store = configureStore(
 
 
 function Tuiter() {
-
-
     return (
         <Provider store={store}>
         <div className="row mt-2">
@@ -45,6 +46,7 @@ function Tuiter() {
                     <Route path="/" element={<HomeComponent/>}/>
                     <Route path="/home" element={<HomeComponent/>}/>
                     <Route path="/profile" element={<ProfileComponent/>}/>
+                    <Route path="/edit-profile" element={<EditProfileComponent/>}/>
                 </Routes>
             </div>
 
