@@ -4,30 +4,46 @@ import TuitItem from "./TuitItem";
 import TuitStats from "../TuitStats";
 
 //Redux imports
+
+import React, {useEffect} from "react";
+
 // import hook to retrieve state from reducer
 import {useSelector} from "react-redux";
-
-
-import {deleteTuit} from "../reducers/tuits-reducer";
-
 // import useDispatch (deleting tuit)
 import {useDispatch} from "react-redux";
 
+import {deleteTuit} from "../reducers/tuits-reducer";
+
+// import the thunk
+import {findTuitsThunk} from "../../services/tuits-thunks";
 
 const TuitList = () => {
+
+    // grab tuits and loading flag from reducer
+    const {tuits, loading} = useSelector(
+        state => state.tuits)
+    // const tuits = useSelector((state) => state.tuits)
+
     // get dispatch
     const dispatch = useDispatch();
+
     // handle delete event,
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id)); // pass tuit's ID to reducer
     }
 
-    const tuits = useSelector((state) => state.tuits)
+    // on component load
+    useEffect(() => {
+        dispatch(findTuitsThunk()) // invoke find tuits thunk to fetch tuits and
+    }, []) // put them in the reducer's store so we can extract them with useSelector() and render the tuits here
 
     return(
         <ul className="list-group">
-            {tuits.map &&
-                tuits.map(tuit =>
+            {
+                // tuits.map &&
+                // tuits.map
+                loading.map && loading.map
+                (tuit =>
                     <>
                     <li className="list-group-item">
                         <div className={"d-flex flex-nowrap"}>
