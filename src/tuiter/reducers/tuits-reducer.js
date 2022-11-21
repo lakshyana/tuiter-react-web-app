@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import tuits from "../tuits/tuits.json"
 
 // import the thunks
-import {findTuitsThunk, deleteTuitThunk, createTuitThunk}
+import {findTuitsThunk, deleteTuitThunk, createTuitThunk, updateTuitThunk}
     from "../../services/tuits-thunks";
 
 // initial state has

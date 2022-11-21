@@ -40,7 +40,7 @@ const TuitStats = ({
                     {tuit.liked ? <i onClick={() => dispatch(updateTuitThunk({
                                 ...tuit,
                                 likes: !tuit.liked ? tuit.likes + 1: tuit.likes - 1,
-                                liked: !tuits.liked,
+                                liked: !tuit.liked,
                             })
                         )} //Update with click
                             className="fa-solid fa-heart me-3 text-danger"></i>
