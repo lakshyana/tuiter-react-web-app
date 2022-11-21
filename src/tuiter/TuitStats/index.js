@@ -44,7 +44,14 @@ const TuitStats = ({
                             })
                         )} //Update with click
                             className="fa-solid fa-heart me-3 text-danger"></i>
-                        : <i className="fa-solid fa-heart me-3 wd-no-fill"></i>
+                        : <i
+                            onClick={() => dispatch(updateTuitThunk({
+                                    ...tuit,
+                                    likes: !tuit.liked ? tuit.likes + 1: tuit.likes - 1,
+                                    liked: !tuit.liked,
+                                })
+                            )} //Update with click
+                            className="fa-solid fa-heart me-3 wd-no-fill"></i>
                     }
                     {tuit.likes}
                 </span>
