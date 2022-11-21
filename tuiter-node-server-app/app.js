@@ -37,4 +37,8 @@ UserController(app); //pass it app
 TuitsController(app);
 
 
-app.listen(4000)
+// app.listen(4000)
+app.listen(process.env.PORT || 4000);
+
+// we can't use port 4000 when running on Heroku.
+// Instead Heroku declares the proper port to use in an environment variable called PORT available from Node using process.env.PORT

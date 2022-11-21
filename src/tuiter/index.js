@@ -29,7 +29,7 @@ import EditProfileComponent from "./edit-profile";
 const store = configureStore(
     {reducer: {who: whoReducer,
             profile: profileReducer, //Add profile reducer
-            tuits: tuitsReducer}});
+            tuitsData: tuitsReducer}}); // rename reducer property since now it's not just an array
 
 
 
@@ -59,34 +59,3 @@ function Tuiter() {
 }
 
 export default Tuiter
-
-
-
-
-// provide the store to the rest of the application so it can
-// pull from the global state
-// <Provider store={store}>
-//     ...
-// </Provider>
-
-
-// <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-//     <NavigationSidebar selected={"home"}/>
-// </div>
-
-//Explore or home comp
-// col-xxl-6 col-xl-7 col-lg-8 col-md-11 col-sm-10 col-10
-
-// <div className="col-10 col-md-10 col-lg-7 col-xl-6"
-// style={{"position": "relative"}}>
-// <Routes>
-// <Route path="/explore" element={<ExploreComponent/>}/>
-// <Route path="/" element={<HomeComponent/>}/>
-// </Routes>
-// </div>
-
-// <div className="d-sm-none d-md-none d-lg-block col-lg-6 col-xl-4">
-//     <WhoToFollowList/>
-//     </div>
-
-//

@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 
-// import reducer function
-import {createTuit} from "../reducers/tuits-reducer";
+// // import reducer function
+// import {createTuit} from "../reducers/tuits-reducer"; // wont be using the reducer function anymore
+import {createTuitThunk}
+    from "../../services/tuits-thunks"; // createTuitThunk instead
+
 // import dispatch hook
 import {useDispatch} from "react-redux";
 
@@ -22,8 +25,9 @@ const WhatsHappening = () => {
             tuit: whatsHappening
         }
         // send tuit as action payload
-        dispatch(createTuit(newTuit));
-        console.log(whatsHappening);
+        dispatch(createTuitThunk(newTuit)); // use thunk instead of reducer function
+
+        // dispatch(createTuit(newTuit));
     }
     return (
         <div className="row">

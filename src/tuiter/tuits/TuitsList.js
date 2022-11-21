@@ -12,7 +12,8 @@ import {useSelector} from "react-redux";
 // import useDispatch (deleting tuit)
 import {useDispatch} from "react-redux";
 
-import {deleteTuit} from "../reducers/tuits-reducer";
+// import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 // import the thunk
 import {findTuitsThunk} from "../../services/tuits-thunks";
@@ -21,7 +22,7 @@ const TuitList = () => {
 
     // grab tuits and loading flag from reducer
     const {tuits, loading} = useSelector(
-        state => state.tuits)
+        state => state.tuitsData)
     // const tuits = useSelector((state) => state.tuits)
 
     // get dispatch
@@ -29,7 +30,8 @@ const TuitList = () => {
 
     // handle delete event,
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id)); // pass tuit's ID to reducer
+        dispatch(deleteTuitThunk(id));
+        // dispatch(deleteTuit(id)); // pass tuit's ID to reducer
     }
 
     // on component load
@@ -39,11 +41,14 @@ const TuitList = () => {
 
     return(
         <ul className="list-group">
-            {
-                // tuits.map &&
-                // tuits.map
-                loading.map && loading.map
-                (tuit =>
+
+            {loading && //Added
+                <li className="list-group-item">
+                    Loading...
+                </li>
+            }
+            {tuits.map &&
+                tuits.map(tuit =>
                     <>
                     <li className="list-group-item">
                         <div className={"d-flex flex-nowrap"}>

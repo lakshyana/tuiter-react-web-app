@@ -1,6 +1,9 @@
 import React from "react";
 import "../../index.css";
 
+import { updateTuitThunk } from "../../services/tuits-thunks";
+import { useDispatch } from "react-redux";
+
 const TuitStats = ({
     tuit = {
         "_id": 234,
@@ -18,11 +21,14 @@ const TuitStats = ({
     }
     }) => {
 
+    const dispatch = useDispatch();
+
+
     return(
         <div className={"ms-5 ps-3"}>
             <div className="d-flex justify-content-between text-muted">
                 <span className="text-secondary">
-                <i className="fa-regular fa-comment me-3"></i>
+                <i  className="fa-regular fa-comment me-3"></i>
                     {tuit.replies}
                 </span>
                 <span className="text-secondary">
@@ -31,10 +37,15 @@ const TuitStats = ({
                 </span>
 
                 <span className="text-secondary">
-                    {tuit.liked ? <i className="fa-solid fa-heart me-3 text-danger"></i>
+                    {tuit.liked ? <i onClick={() => dispatch(updateTuitThunk({
+                                ...tuit,
+                                likes: !tuit.liked ? tuit.likes + 1: tuit.likes - 1,
+                                liked: !tuits.liked,
+                            })
+                        )} //Update with click
+                            className="fa-solid fa-heart me-3 text-danger"></i>
                         : <i className="fa-solid fa-heart me-3 wd-no-fill"></i>
                     }
-
                     {tuit.likes}
                 </span>
                 <span className="text-secondary me-5">
