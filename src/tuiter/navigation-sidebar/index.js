@@ -14,16 +14,6 @@ const NavigationSidebar = (data) => {
     // const active = paths[2];
     const active = paths.length === 3 ? paths[2] : data.selected ;//select default option otherwise
 
-    console.log("path name: ", pathname)
-    console.log("paths length: ", paths.length)
-    console.log("data.selected: ", data.selected)
-    console.log("path name split result: ", pathname.split("/"))
-    console.log("test active condition: ",paths.length === 3)
-
-    console.log("paths: " + paths)
-
-    console.log("active: " + active)
-
     return (
         <div className="list-group">
             <a className="list-group-item">
