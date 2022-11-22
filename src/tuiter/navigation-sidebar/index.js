@@ -12,9 +12,11 @@ const NavigationSidebar = (selected) => {
     const paths = pathname.split('/')
     // const active = paths.length === 2 ? paths[2] : selected ;
     // const active = paths[2];
-    const active = pathname.includes("/") && paths.length === 2 ? paths[2] : selected ;//select default option otherwise
-    console.log("Path name in nav sb:"+pathname)
+    const active = paths.length === 3 ? paths[2] : selected ;//select default option otherwise
+
     console.log("path name: ", pathname)
+    console.log("paths length: ", paths.length)
+    console.log("selected: ", selected)
     console.log("path name split result: ", pathname.split("/"))
     console.log("test active condition: ", pathname.includes("/") && paths.length === 2)
 
