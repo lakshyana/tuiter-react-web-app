@@ -22,7 +22,7 @@ const NavigationSidebar = () => {
                 <i className="fab fa-twitter"></i>
                 <span className={"d-none d-xl-inline"}> Tuiter</span>
             </a>
-            <Link to="/tuiter/" className={`list-group-item ${active === ''?'active':''}`}>
+            <Link to="/tuiter/home" className={`list-group-item ${active === ''?'active':''}`}>
                 <i className="fa-solid fa-house mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Home</span>
             </Link>
