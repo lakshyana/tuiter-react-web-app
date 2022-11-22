@@ -17,6 +17,11 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     // retrieve dispatch function with hook
     const dispatch = useDispatch();
+
+    const refreshPage = () => {
+        window.location.reload(false);
+    }
+
     const tuitClickHandler = () => {
         // create new tuit
         // with text typed in textarea
@@ -26,6 +31,7 @@ const WhatsHappening = () => {
         }
         // send tuit as action payload
         dispatch(createTuitThunk(newTuit)); // use thunk instead of reducer function
+        refreshPage();
 
         // dispatch(createTuit(newTuit));
     }
