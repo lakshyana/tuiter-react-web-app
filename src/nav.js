@@ -1,12 +1,11 @@
 import {Link} from "react-router-dom";
-import {useLocation} from "react-router";
+// import {useLocation} from "react-router";
 
 
 function Nav() {
     return (
         <div>
             <Link to="/">Labs</Link> |
-            <Link to="/">Assignment 6</Link> |
             <Link to="/a7">Assignment 7</Link> |
             <Link to="/tuiter/">Tuiter</Link>
         </div>
@@ -16,7 +15,7 @@ function Nav() {
 export default Nav;
 
 
-
+// <Link to="/">Assignment 6</Link> |
 
 // export default () => {
 //     const {pathname} = useLocation()
