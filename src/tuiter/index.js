@@ -44,7 +44,6 @@ function Tuiter() {
                 <Routes>
                     <Route path="/explore" element={<ExploreComponent/>}/>
                     <Route path="/" element={<HomeComponent/>}/>
-                    <Route path="/home" element={<HomeComponent/>}/>
                     <Route path="/profile" element={<ProfileComponent/>}/>
                     <Route path="/edit-profile" element={<EditProfileComponent/>}/>
                 </Routes>
