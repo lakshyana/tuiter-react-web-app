@@ -7,11 +7,11 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
 
-const NavigationSidebar = () => {
+const NavigationSidebar = (selected) => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
-    // const active = paths.length === 2 ? paths[2] : selected ;
-    const active = paths[2];
+    const active = paths.length === 2 ? paths[2] : selected ;
+    // const active = paths[2];
     console.log("Path name in nav sb:"+pathname)
     console.log("paths: " + paths)
     console.log("active: " + active)
@@ -20,12 +20,14 @@ const NavigationSidebar = () => {
         <div className="list-group">
             <a className="list-group-item">
                 <i className="fab fa-twitter"></i>
-                <span className={"d-none d-xl-inline"}> Tuiter</span>
+                <span className={"d-none d-xl-inline"}>Tuiter</span>
             </a>
+
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home' || active==='' ?'active':''}`}>
                 <i className="fa-solid fa-house mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Home</span>
             </Link>
+
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
                 <i className="fa-solid fa-hashtag mx-2"></i>
                 <span className={"d-none d-xl-inline"}>Explore</span>
