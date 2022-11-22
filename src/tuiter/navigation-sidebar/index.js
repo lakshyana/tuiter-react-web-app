@@ -16,7 +16,7 @@ const NavigationSidebar = (data) => {
 
     console.log("path name: ", pathname)
     console.log("paths length: ", paths.length)
-    console.log("selected: ", selected)
+    console.log("data.selected: ", data.selected)
     console.log("path name split result: ", pathname.split("/"))
     console.log("test active condition: ",paths.length === 3)
 
