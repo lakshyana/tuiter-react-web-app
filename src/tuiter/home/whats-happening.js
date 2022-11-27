@@ -19,7 +19,7 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
 
     const refreshPage = () => {
-        window.location.reload(false);
+        window.location.reload(true);
     }
 
     const tuitClickHandler = () => {
@@ -31,7 +31,7 @@ const WhatsHappening = () => {
         }
         // send tuit as action payload
         dispatch(createTuitThunk(newTuit)); // use thunk instead of reducer function
-        // refreshPage();
+        refreshPage();
 
         // dispatch(createTuit(newTuit));
     }
