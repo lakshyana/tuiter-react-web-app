@@ -31,7 +31,7 @@ const WhatsHappening = () => {
         }
         // send tuit as action payload
         dispatch(createTuitThunk(newTuit)); // use thunk instead of reducer function
-        // refreshPage();
+        // refreshPage(); //refreshing here caused an issue
 
         // dispatch(createTuit(newTuit));
     }
