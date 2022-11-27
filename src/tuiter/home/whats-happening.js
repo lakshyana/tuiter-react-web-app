@@ -18,9 +18,9 @@ const WhatsHappening = () => {
     // retrieve dispatch function with hook
     const dispatch = useDispatch();
 
-    const refreshPage = () => {
-        window.location.reload(true);
-    }
+    // const refreshPage = () => {
+    //     window.location.reload(true);
+    // }
 
     const tuitClickHandler = () => {
         // create new tuit
@@ -31,7 +31,7 @@ const WhatsHappening = () => {
         }
         // send tuit as action payload
         dispatch(createTuitThunk(newTuit)); // use thunk instead of reducer function
-        refreshPage();
+        // refreshPage();
 
         // dispatch(createTuit(newTuit));
     }
@@ -47,7 +47,7 @@ const WhatsHappening = () => {
        </textarea>
                 <div>
                     <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
-                            onClick={tuitClickHandler}>
+                            onClick={tuitClickHandler} >
                         Tuit
                     </button>
                     <div className="text-primary fs-2">
