@@ -18,9 +18,9 @@ const WhatsHappening = () => {
     // retrieve dispatch function with hook
     const dispatch = useDispatch();
 
-    const refreshPage = () => {
-        window.location.reload(false);
-    }
+//     const refreshPage = () => {
+//         window.location.reload(false);
+//     }
 
     const tuitClickHandler = () => {
         // create new tuit
@@ -31,7 +31,7 @@ const WhatsHappening = () => {
         }
         // send tuit as action payload
         dispatch(createTuitThunk(newTuit)); // use thunk instead of reducer function
-        refreshPage();
+//         refreshPage(); //refreshing here can cause some issue as the page might refresh before server response
 
         // dispatch(createTuit(newTuit));
     }
