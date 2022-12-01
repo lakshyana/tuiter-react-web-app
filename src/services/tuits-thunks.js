@@ -30,6 +30,7 @@ export const createTuitThunk = createAsyncThunk(
     'tuits/createTuit',
     async (newTuit) => {
         await service.createTuit(newTuit)
+        window.location.reload(false) //RELOAD PAGE FROM BROWSER CACHE
         return newTuit
     })
 
